@@ -12,12 +12,12 @@ closeButton.onclick = function() {
 
 
 
-let catalogopen = document.querySelector('.catalog-navigation .navigation-link');
-let sublist = document.querySelector('.sub-list');
+// let catalogopen = document.querySelector('.catalog-navigation .navigation-link');
+// let sublist = document.querySelector('.sub-list');
 
-catalogopen.onclick = function() {
-  sublist.classList.toggle('sub-list-toogle');
-};
+// catalogopen.onclick = function() {
+//  sublist.classList.toggle('sub-list-toogle');
+// };
 
 
 

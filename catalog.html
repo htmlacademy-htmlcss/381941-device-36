@@ -3,7 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог моноподов | HTML Academy: Девайс</title>
+  <meta name="description" content="Device — Интернет магазин электроники">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="img/misc/favicon.ico">
 </head>
 <body>
 
@@ -17,10 +20,8 @@
 <div class="top-panel">
         <div class="top-panel-search">
           <form class="top-panel-form" action="https://echo.htmlacademy.ru/" method="POST">
-            <label class="top-panel-label">
-              <span class="visually-hidden">Поиск</span>
-              <input class="top-panel-input" type="search" placeholder="     Поиск по сайту">
-            </label>
+              <input id="search" class="top-panel-input" type="search" placeholder="Текст поиска" required>
+              <label for="search" class="top-panel-label"><span class="visually-hidden">Поиск</span></label>                          
             <button class="top-panel-button" type="submit">Найти</button>
           </form>
         </div>
@@ -28,24 +29,23 @@
         <div class="user-navigation">
           <a class="user-navigation-link visually-hidden" href="#">Войти</a>
           <a class="user-navigation-link" href="#">Коля Петухов</a>
-          <a class="user-navigation-exit-link" href="#">Выйти</a>
-          
+          <a class="user-navigation-exit-link" href="#">Выйти</a>          
         </div>
 
         <div class="user-cart-box">
           <a class="compare-link" href="#">Сравнить</a>
-          <a class="cart-link" href="#"><button class="added-item-amount">2</button>Корзина</a>
+          <a class="cart-link" href="#"><div class="added-item-amount">2</div>Корзина</a>
           <div class="user-cart-box-popup">
             <div class="user-cart-box-items">
-              <a class="user-cart-box-items-link">
-                <img class="user-cart-item" src="img/products/small-selfie-stick.jpg" alt="Любительская селфи-палка маленькая на белом фоне" width="39" height="43" />
+              <a href="#" class="user-cart-box-items-link">
+                <img class="user-cart-item" src="img/products/small-selfie-stick.jpg" alt="Любительская селфи-палка маленькая на белом фоне" width="39" height="43">
                 <div class="user-cart-text">Любительская селфи-палка</div>
               </a>
               <button class="user-cart-close" aria-label="Закрыть"></button>
             </div>
             <div class="user-cart-box-items">
-              <a class="user-cart-box-items-link">
-                <img class="user-cart-item" src="img/products/small-pro-stick.jpg" alt="Любительская селфи-палка маленькая на белом фоне" width="39" height="43" />
+              <a href="#" class="user-cart-box-items-link">
+                <img class="user-cart-item" src="img/products/small-pro-stick.jpg" alt="Любительская селфи-палка маленькая на белом фоне" width="39" height="43">
                 <div class="user-cart-text">Профессиональная селфи-палка</div>
               </a>
               <button class="user-cart-close" aria-label="Закрыть"></button>
@@ -121,8 +121,8 @@
                   <div class="catalog-filter-scale">
                     <div class="catalog-filter-bar"></div>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
+                  <button class="range-toggle range-toggle-min"></button>
+                  <button class="range-toggle range-toggle-max"></button>
               </div>
             </fieldset>
 
@@ -152,7 +152,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group bluetooth-group">
               <legend class="catalog-filter-title">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -206,7 +206,7 @@
                 <img class="product-card-image" src="img/products/professional-selfie-stick.jpg" width="360" height="380" alt="Селфи палка для профессионалов чёрного цвета">
                 <div class="title-price-wrapper">
                   <h3 class="product-card-title">Профессиональная селфи-палка </h3>
-                  <b class="product-card-price">1500 ₽</b>
+                  <b class="product-card-price">1 500 ₽</b>
                 </div>  
               </a>
             </li>
@@ -216,7 +216,7 @@
                 <img class="product-card-image" src="img/products/selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка чёрно - жёлтого цвета">
                 <div class="title-price-wrapper">
                   <h3 class="product-card-title">Непотопляемая<br> селфи-палка</h3>
-                  <b class="product-card-price">2500 ₽</b>
+                  <b class="product-card-price">2 500 ₽</b>
                 </div>
               </a>              
             </li>
@@ -226,37 +226,34 @@
                 <img class="product-card-image" src="img/products/monopod.jpg" width="360" height="380" alt="Селфи-палка в виде человеческой руки">
                 <div class="title-price-wrapper">
                   <h3 class="product-card-title">Селфи-палка «Следуй<br> за мной»</h3>
-                  <b class="product-card-price">1500 ₽</b>
+                  <b class="product-card-price">1 500 ₽</b>
                 </div>  
               </a>              
             </li>
           </ul>
 
           <button class="pagination-show-more" type="button">Загрузить ещё</button>
-
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">15</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-next" href="#">Вперёд</a>
-              </li>
-            </ul>
+            <div class="pagination">
+              <a href="#" class="pagination-link pagination-prev pagination-disabled">Назад</a>
+              <ul class="pagination-numbers">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">15</a>
+                </li>
+              </ul>
+              <a class="pagination-link pagination-next" href="#">Вперёд</a>
+            </div>
           </div>
       </div>
     </div>
@@ -282,7 +279,7 @@
         </div>
         <div class="delivery-popup-email delivery-popup-item">
           <label class="delivery-popup-label" for="e-mail">Ваш e-mail:</label>
-          <input class="delivery-input" type="e-mail" name="e-mail" placeholder="почта" id="e-mail">
+          <input class="delivery-input" type="email" name="e-mail" placeholder="почта" id="e-mail">
           <span class="user-email-icon"></span>   
         </div>    
         <div class="delivery-popup-text delivery-popup-item">
@@ -290,7 +287,7 @@
           <input class="delivery-input" type="text" name="text" placeholder="В свободной форме" id="text">
         </div>    
         <div class="delivery-popup-number delivery-popup-item">
-          <div class="delivery-popup-label" for="count">Количество: <span class="delivery-info">i</span>
+          <div class="delivery-popup-label">Количество: <span class="delivery-info">i</span>
             <div class="hover-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</div>
           </div>
             <div class="delivery-popup-number-wrapper">
@@ -339,12 +336,12 @@
                 </a>
               </li>
               <li class="footer-social-item">
-                <a target="_blank" rel="nofollow noopener" class="footer-social-link twitter" href="#">
+                <a target="_blank" rel="nofollow noopener" class="footer-social-link youtube" href="#">
                   <span class="visually-hidden">Ютуб</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a target="_blank" rel="nofollow noopener" class="footer-social-link youtube" href="#">
+                <a target="_blank" rel="nofollow noopener" class="footer-social-link twitter" href="#">
                   <span class="visually-hidden">Твитер</span>
                 </a>
               </li>
@@ -355,12 +352,12 @@
     <div class="footer-copyright">
       <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <p class="footer-text">
-        <a class="footer-copyright-link" href="https://htmlacademy.ru/"><img src="img/footer/html-academy-logo.svg" width="115" height="33" alt="html academy" />
+        <a class="footer-copyright-link" href="https://htmlacademy.ru/"><img src="img/footer/html-academy-logo.svg" width="115" height="33" alt="html academy">
         </a>
       </p>
     </div>
   </div>
 </footer>
-<script type="text/javascript" src="js/popup.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>

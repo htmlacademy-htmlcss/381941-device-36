@@ -3,8 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
+	<meta name="description" content="Device — Интернет магазин электроники">
+  	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="styles/style.css">
-	<script type="text/javascript" src="js/slider.js"></script>	
+	<link rel="icon" href="img/misc/favicon.ico">	
 </head>
 <body>
 
@@ -16,10 +18,8 @@
 			<div class="top-panel">
 				<div class="top-panel-search">
 					<form class="top-panel-form" action="https://echo.htmlacademy.ru/" method="POST">
-						<label class="top-panel-label">
-							<span class="visually-hidden">Поиск</span>
-							<input class="top-panel-input" type="search" placeholder="     Поиск по сайту">
-						</label>
+							<input id="search" class="top-panel-input" type="search" placeholder="Поиск по сайту" required>
+							<label for="search" class="top-panel-label"><span class="visually-hidden">Поиск</span></label>													
 						<button class="top-panel-button" type="submit">Найти</button>
 					</form>
 				</div>
@@ -32,18 +32,18 @@
 
 				<div class="user-cart-box">
 					<a class="compare-link" href="#">Сравнить</a>
-					<a class="cart-link" href="#"><button class="added-item-amount">2</button>Корзина</a>
+					<a class="cart-link" href="#"><div class="added-item-amount">2</div>Корзина</a>
 					<div class="user-cart-box-popup">
 						<div class="user-cart-box-items">
 							<a class="user-cart-box-items-link">
-								<img class="user-cart-item" src="img/products/small-selfie-stick.jpg" alt="Любительская селфи-палка маленькая на белом фоне" width="39" height="43" />
+								<img class="user-cart-item" src="img/products/small-selfie-stick.jpg" alt="Любительская селфи-палка маленькая на белом фоне" width="39" height="43">
 								<div class="user-cart-text">Любительская селфи-палка</div>
 							</a>
 							<button class="user-cart-close" aria-label="Закрыть"></button>
 						</div>
 						<div class="user-cart-box-items">
 							<a class="user-cart-box-items-link">
-								<img class="user-cart-item" src="img/products/small-pro-stick.jpg" alt="Любительская селфи-палка маленькая на белом фоне" width="39" height="43" />
+								<img class="user-cart-item" src="img/products/small-pro-stick.jpg" alt="Любительская селфи-палка маленькая на белом фоне" width="39" height="43">
 								<div class="user-cart-text">Профессиональная селфи-палка</div>
 							</a>
 							<button class="user-cart-close" aria-label="Закрыть"></button>
@@ -66,12 +66,12 @@
 					<li class="navigation-item catalog-navigation">
 						<a class="navigation-link" href="#" >Каталог товаров</a>
 						<ul class="sub-list">
-							<li class="sub-list-item"><a href="">Виртуальная реальность</a></li>
-							<li class="sub-list-item"><a href="">Фитнес-браслеты</a></li>
-							<li class="sub-list-item"><a href="">Квадрокоптеры</a></li>
+							<li class="sub-list-item"><a href="#">Виртуальная реальность</a></li>
+							<li class="sub-list-item"><a href="#">Фитнес-браслеты</a></li>
+							<li class="sub-list-item"><a href="#">Квадрокоптеры</a></li>
 							<li class="sub-list-item"><a href="catalog.html">Моноподы для cелфи</a></li>
-							<li class="sub-list-item span-two"><a href="">Умные часы</a></li>
-							<li class="sub-list-item"><a href="">Экшн-камеры</a></li>
+							<li class="sub-list-item span-two"><a href="#">Умные часы</a></li>
+							<li class="sub-list-item"><a href="#">Экшн-камеры</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -102,7 +102,7 @@
 
 				<div class="main-slider-item active">
 					<div class="image-main-slider-box">
-						<img class="image-main-slider-product" src="img/slider/kvadrokopter.png" width="560" height="560" alt="Белый квадрокоптер, который оснащен камерой и лазером" />
+						<img class="image-main-slider-product" src="img/slider/kvadrokopter.png" width="560" height="560" alt="Белый квадрокоптер, который оснащен камерой и лазером">
 						<button onclick="currentSlide(3)" class="main-slider-arrow left" aria-label="Назад"></button>
 						<button onclick="currentSlide(2)" class="main-slider-arrow right" aria-label="Вперед"></button>
 					</div>
@@ -131,7 +131,7 @@
 
 				<div class="main-slider-item">
 					<div class="image-main-slider-box">
-						<img class="image-main-slider-product" src="img/slider/fitness-band.png" width="560" height="560" alt="Чёрный фитнес браслет с надписью" />
+						<img class="image-main-slider-product" src="img/slider/fitness-band.png" width="560" height="560" alt="Чёрный фитнес браслет с надписью">
 						<button onclick="currentSlide(1)" class="main-slider-arrow left" aria-label="Назад"></button>
 						<button onclick="currentSlide(3)" class="main-slider-arrow right" aria-label="Вперед"></button>
 					</div>
@@ -156,7 +156,7 @@
 				</div>
 				<div class="main-slider-item">
 					<div class="image-main-slider-box">
-						<img class="image-main-slider-product" src="img/slider/selfie-stick.png" width="560" height="560" alt="Чёрная палка для селфи со штативом" />
+						<img class="image-main-slider-product" src="img/slider/selfie-stick.png" width="560" height="560" alt="Чёрная палка для селфи со штативом">
 						<button onclick="currentSlide(2)" class="main-slider-arrow left" aria-label="Назад"></button>
 						<button onclick="currentSlide(1)" class="main-slider-arrow right" aria-label="Вперед"></button>
 					</div>
@@ -187,7 +187,7 @@
 				<div class="main-slider-control">
 					<button onclick="currentSlide(1)" class="main-slider-control-button active" aria-label="Товар 1"></button>
 					<button onclick="currentSlide(2)" class="main-slider-control-button" aria-label="Товар 2"></button>
-					<button onclick="currentSlide(3)" class="main-slider-control-button"aria-label="Товар 3"></button>
+					<button onclick="currentSlide(3)" class="main-slider-control-button" aria-label="Товар 3"></button>
 				</div>				
 
 
@@ -203,7 +203,7 @@
 				<li class="products-item">
 					<a href="#" class="products-item-link">
 						<div class="products-image-wrapper">
-							<img class="products-image" src="img/popular-products/virtual-reality.svg" width="96.95" height="54.99" alt="Иконка виртуальная реальность" />
+							<img class="products-image" src="img/popular-products/virtual-reality.svg" width="97" height="55" alt="Иконка виртуальная реальность">
 						</div>	
 						<span class="products-title">Виртуальная реальность</span>
 					</a>
@@ -211,7 +211,7 @@
 				<li class="products-item">
 					<a href="#" class="products-item-link">
 						<div class="products-image-wrapper">
-							<img src="img/popular-products/monopod.svg" width="85.87" height="117" alt="Иконка Моноподы для селфи" />
+							<img src="img/popular-products/monopod.svg" width="86" height="117" alt="Иконка Моноподы для селфи">
 						</div>	
 						<span class="products-title">Моноподы <br>для селфи</span>
 					</a>
@@ -220,7 +220,7 @@
 				<li class="products-item">
 					<a href="#" class="products-item-link">
 						<div class="products-image-wrapper">
-							<img src="img/popular-products/action-camera.svg" width="71.02" height="87" alt="Иконка Экшн-камеры" />
+							<img src="img/popular-products/action-camera.svg" width="71" height="87" alt="Иконка Экшн-камеры">
 						</div>	
 						<span class="products-title">Экшн-камеры</span>
 					</a>
@@ -228,7 +228,7 @@
 				<li class="products-item">
 					<a href="#" class="products-item-link">
 						<div class="products-image-wrapper">
-							<img src="img/popular-products/fitness-band.svg" width="107.31" height="64.99" alt="Иконка Фитнес-браслеты" />
+							<img src="img/popular-products/fitness-band.svg" width="107" height="64" alt="Иконка Фитнес-браслеты">
 						</div>	
 						<span class="products-title">Фитнес-браслеты</span>
 					</a>
@@ -237,7 +237,7 @@
 				<li class="products-item">
 					<a href="#" class="products-item-link">
 						<div class="products-image-wrapper">
-							<img src="img/popular-products/fitness-watch.svg" width="56.01" height="97.98" alt="Иконка умные часы" />
+							<img src="img/popular-products/fitness-watch.svg" width="56" height="98" alt="Иконка умные часы">
 						</div>
 						<span class="products-title">Умные часы</span>
 					</a>
@@ -246,7 +246,7 @@
 				<li class="products-item">
 					<a href="#" class="products-item-link">
 						<div class="products-image-wrapper">
-							<img src="img/popular-products/kvadrokopter.svg" width="132.03" height="69.01" alt="Иконка Квадрокоптеры" />
+							<img src="img/popular-products/kvadrokopter.svg" width="132" height="69" alt="Иконка Квадрокоптеры">
 						</div>
 						<span class="products-title">Квадрокоптеры</span>
 					</a>
@@ -300,12 +300,14 @@
 
 		<!-- Начало блока инфобокс -->
 		<article class="infobox container">
-			<h2 class="visually-hidden">Доставка</h2>
-			<div class="car-icon-wrapper">
-			</div>
-			<div class="infobox-title">Доставим редкий товар под заказ</div>
-			<div class="info-icon">
-				<span class="info-icon-item">i</span>
+			<div class="infobox-wrapper">
+				<h2 class="visually-hidden">Доставка</h2>
+				<div class="car-icon-wrapper">
+				</div>
+				<div class="infobox-title">Доставим редкий товар под заказ</div>
+				<div class="info-icon">
+					<span class="info-icon-item">i</span>
+				</div>
 			</div>
 		</article>
 		<!-- Конец блока инфобокс -->
@@ -359,7 +361,7 @@
 					<form action="https://echo.htmlacademy.ru/" method="post">
 						<div class="subscribe-form-box-wrapper">
 							<label class="subscribe-form-box-label">
-								<input type="text" name="signup-email" id="signup-email" placeholder="Ваш e-mail" />
+								<input type="text" name="signup-email" id="signup-email" placeholder="Ваш e-mail" required>
 							</label>	
 							<button class="subscribe-form-button button" type="submit">Подписаться</button>
 						</div>
@@ -389,15 +391,15 @@
 				</div>
 				<div class="delivery-popup-email delivery-popup-item">
 					<label class="delivery-popup-label" for="e-mail">Ваш e-mail:</label>
-					<input class="delivery-input" type="e-mail" name="e-mail" placeholder="почта" id="e-mail">
+					<input class="delivery-input" type="email" name="e-mail" placeholder="почта" id="e-mail" required>
 					<span class="user-email-icon"></span>		
 				</div>	  
 				<div class="delivery-popup-text delivery-popup-item">
 					<label class="delivery-popup-label" for="text">Что нужно привезти:</label>
-					<input class="delivery-input" type="text" name="text" placeholder="В свободной форме" id="text">
+					<input class="delivery-input" type="text" name="text" placeholder="В свободной форме" id="text" required>
 				</div>	  
 				<div class="delivery-popup-number delivery-popup-item">
-					<div class="delivery-popup-label" for="count">Количество: <span class="delivery-info">i</span>
+					<div class="delivery-popup-label">Количество: <span class="delivery-info">i</span>
 						<div class="hover-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</div>
 					</div>
 						<div class="delivery-popup-number-wrapper">
@@ -463,12 +465,13 @@
 			<div class="footer-copyright">
 				<a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
 				<p class="footer-text">
-					<a class="footer-copyright-link" href="https://htmlacademy.ru/"><img src="img/footer/html-academy-logo.svg" width="115" height="33" alt="html academy" />
+					<a class="footer-copyright-link" href="https://htmlacademy.ru/"><img src="img/footer/html-academy-logo.svg" width="115" height="33" alt="html academy">
 					</a>
 				</p>
 			</div>
 		</div>
 	</footer>
-<script type="text/javascript" src="js/popup.js"></script>	
+<script src="js/popup.js"></script>
+<script src="js/slider.js"></script>		
 </body>
 </html>
